@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>oceanlons.io</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>oceanlons.io — Boat Arena</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<canvas id="gameCanvas"></canvas>
-
-<div id="controls">
-    <div id="joystick"></div>
-    <button id="shootBtn">FIRE</button>
+<div id="game-container"></div>
+<div id="hud">
+<div id="scoreboard">Conectando...</div>
+<button id="btn-reconnect">Reconectar</button>
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="client.js"></script>
 </body>
