@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: boat-arena
+    env: node
+    plan: free
+    buildCommand: "npm ci"
+    startCommand: "node server.js"
+    envVars:
+      - key: PORT
+        value: "3000"
