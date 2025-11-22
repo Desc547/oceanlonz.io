@@ -1,0 +1,7 @@
+services:
+- type: web
+name: oceanlons-io
+env: node
+buildCommand: "npm ci"
+startCommand: "node server.js"
+plan: free
